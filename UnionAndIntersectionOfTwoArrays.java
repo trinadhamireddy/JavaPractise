@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public class UnionAndIntersectionOfTwoArrays {
 	public static void main(String args[]) {
 		Scanner s = new Scanner(System.in);
@@ -15,6 +14,7 @@ public class UnionAndIntersectionOfTwoArrays {
 			a2[i] = s.nextInt();
 		
 		int i1=0,i2=0;
+		//u is union of a1,a2 arrays
 		ArrayList<Integer> u = new ArrayList<Integer>();
 		while(i1<n1 && i2<n2) {
 			if(a1[i1]==a2[i2]) {
@@ -34,7 +34,7 @@ public class UnionAndIntersectionOfTwoArrays {
 		for(Integer i:u)
 			System.out.print(i+" ");
 		System.out.println();
-		
+		//inter is interstion of a1 & a2
 		ArrayList<Integer> inter = new ArrayList<Integer>();
 		i1=0;i2=0;
 		while(i1<n1 && i2<n2) {
