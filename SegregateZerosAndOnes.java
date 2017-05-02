@@ -5,7 +5,7 @@ public class SegregateZerosAndOnes {
 	public static void segregateZerosAndOnes(int[] a) {
 		int i=0,n=a.length-1,j=n,temp;
 		while(i<j) {
-			while(i<n && a[i]==0)
+			while(i<=n && a[i]==0)
 				i++;
 			while(j>=0 && a[j]==1) 
 				j--;
@@ -15,7 +15,7 @@ public class SegregateZerosAndOnes {
 			i++;
 			j--;
 		}
-		for(i=0;i<n;i++)
+		for(i=0;i<=n;i++)
 			System.out.print(a[i]+" ");
 	}
 	public static void main(String[] args) {
